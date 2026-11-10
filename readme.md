@@ -1,9 +1,18 @@
 > [!NOTE]
-> ## このブランチ（`caps_lt`）について
+> ## このブランチ（`caps_lt_space_alt`）について
 >
-> Keychron V8 Max（ANSI Encoder）用のカスタムキーマップ **`caps_lt`** を追加したブランチです。
-> Keychron 公式の `2025q3` ブランチをベースにしているため、Per-Key RGB も使えます。
-> Caps Lock キーを `LT(4, KC_CAPS)` にして、次のように動作させます。
+> Keychron V8 Max（ANSI Encoder）用のカスタムキーマップ **`caps_lt_space_alt`** を追加したブランチです。
+> [`caps_lt`](https://github.com/marisawa-arch/qmk_firmware/tree/caps_lt) ブランチをベースに、右スペースキーのタップ / ホールド動作を加えています。
+> Keychron 公式の `2025q3` ブランチがベースなので、Per-Key RGB も使えます。
+>
+> **右スペースキー**（`LT(0, KC_SPC)`）
+>
+> | 操作 | Windows（Win スイッチ） | Android（Mac スイッチ） |
+> |---|---|---|
+> | タップ | `Space` | `Space` |
+> | ホールド | ``Alt + ` ``（IME 切り替え） | `Ctrl + Space`（IME 切り替え） |
+>
+> **Caps Lock キー**（`LT(4, KC_CAPS)`、`caps_lt` と同じ）
 >
 > | 操作 | 動作 |
 > |---|---|
@@ -11,12 +20,13 @@
 > | Shift を押しながらタップ | `Caps Lock`（大文字固定） |
 > | ホールド | レイヤー `_FN2`（F1〜F12 など） |
 >
-> - 詳しい説明: [`keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt/readme.md`](keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt/readme.md)
-> - キーマップ本体: [`keymap.c`](keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt/keymap.c)
-> - ビルド済みファームウェア: [`keychron_v8_max_ansi_encoder_caps_lt.bin`](keyboards/keychron/v8_max/firmware/keychron_v8_max_ansi_encoder_caps_lt.bin)
+> - 詳しい説明: [`keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt_space_alt/readme.md`](keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt_space_alt/readme.md)
+> - キーマップ本体: [`keymap.c`](keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt_space_alt/keymap.c)
+> - ビルド済みファームウェア: [`keychron_v8_max_ansi_encoder_caps_lt_space_alt.bin`](keyboards/keychron/v8_max/firmware/keychron_v8_max_ansi_encoder_caps_lt_space_alt.bin)
 > - バックライト修正: `keyboards/keychron/v8_max/config.h` の `SNLED27351_SDB_PIN` を `B9` → `B7`
+> - `caps_lt` キーマップ（右スペースは通常の Space）も、このブランチに含まれています。
 >
-> ビルド: `make keychron/v8_max/ansi_encoder:caps_lt`
+> ビルド: `make keychron/v8_max/ansi_encoder:caps_lt_space_alt`
 >
 > 以下は元の Keychron QMK Firmware の README です。
 
