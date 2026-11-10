@@ -32,7 +32,9 @@
 
 /* SNLED27351 Driver Configuration */
 #if defined(RGB_MATRIX_ENABLE)
-#    define SNLED27351_SDB_PIN B9
+/* B9 is a chip-select pin (see SELECT_PINS); the driver shutdown pin is B7
+ * (LED_DRIVER_SHUTDOWN_PIN on wireless_playground, and SDB on other Keychron boards). */
+#    define SNLED27351_SDB_PIN B7
 #    define SNLED27351_SELECT_PINS \
         { B8, B9 }
 #    define SNLED27351_SPI_DIVISOR 16
