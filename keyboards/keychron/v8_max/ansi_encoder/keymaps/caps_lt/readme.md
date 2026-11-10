@@ -54,7 +54,7 @@ Caps Lock の位置に `LT(_FN2, KC_CAPS)`（Keychron Launcher / VIA 上の表�
 
 `2025q3` ブランチの `keyboards/keychron/v8_max/config.h` では `SNLED27351_SDB_PIN` が `B9` になっており、
 チップセレクト用ピン（`SNLED27351_SELECT_PINS` の `B9`）と重複して、そのままビルドするとバックライトが全く点灯しませんでした。
-このブランチでは `B7`（旧 `wireless_playground` の `LED_DRIVER_SHUTDOWN_PIN` と同じ）に修正しています。
+このブランチでは `B7`（`wireless_playground` の `LED_DRIVER_SHUTDOWN_PIN` と同じ）に修正しています。
 
 ## ビルド
 
