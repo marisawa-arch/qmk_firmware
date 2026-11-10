@@ -1,3 +1,25 @@
+> [!NOTE]
+> ## このブランチ（`caps_lt`）について
+>
+> Keychron V8 Max（ANSI Encoder）用のカスタムキーマップ **`caps_lt`** を追加したブランチです。
+> Keychron 公式の `2025q3` ブランチをベースにしているため、Per-Key RGB も使えます。
+> Caps Lock キーを `LT(4, KC_CAPS)` にして、次のように動作させます。
+>
+> | 操作 | 動作 |
+> |---|---|
+> | タップ | `Shift + Caps Lock`（IME の英字 / 日本語入力モード切り替え） |
+> | Shift を押しながらタップ | `Caps Lock`（大文字固定） |
+> | ホールド | レイヤー `_FN2`（F1〜F12 など） |
+>
+> - 詳しい説明: [`keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt/readme.md`](keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt/readme.md)
+> - キーマップ本体: [`keymap.c`](keyboards/keychron/v8_max/ansi_encoder/keymaps/caps_lt/keymap.c)
+> - ビルド済みファームウェア: [`keychron_v8_max_ansi_encoder_caps_lt.bin`](keyboards/keychron/v8_max/firmware/keychron_v8_max_ansi_encoder_caps_lt.bin)
+> - バックライト修正: `keyboards/keychron/v8_max/config.h` の `SNLED27351_SDB_PIN` を `B9` → `B7`
+>
+> ビルド: `make keychron/v8_max/ansi_encoder:caps_lt`
+>
+> 以下は元の Keychron QMK Firmware の README です。
+
 # Keychron QMK Firmware
 
 [![Star this repo](https://img.shields.io/github/stars/Keychron/qmk_firmware?style=social&label=Star%20this%20repo)](https://github.com/Keychron/qmk_firmware)
