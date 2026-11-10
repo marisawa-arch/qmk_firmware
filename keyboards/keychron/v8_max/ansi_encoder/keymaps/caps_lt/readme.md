@@ -38,6 +38,16 @@ Caps Lock の位置に `LT(_FN2, KC_CAPS)`（Keychron Launcher / VIA 上の表�
 - ファームウェアを書き込むと、Launcher で変更したキー割り当ては初期化されることがあります（VIA の EEPROM はビルド日付で有効性を判定するため）。必要に応じて事前に設定をエクスポートしてください。
 - Launcher から公式ファームウェアへ更新すると、このキーマップは上書きされます。
 
+## ビルド済みファームウェア
+
+ビルド済みのファームウェアを同梱しています。自分でビルドしなくても、これをそのまま書き込めます。
+
+- [`keyboards/keychron/v8_max/firmware/keychron_v8_max_ansi_encoder_caps_lt.bin`](../../../firmware/keychron_v8_max_ansi_encoder_caps_lt.bin)
+  - ビルド元コミット: `cd1bb59`（`keymap.c` / `rules.mk` は現在と同一）
+  - SHA-256: `5c5cd1a6cce2c618234c0404c02ddb7e09f01aa4cba1b079fc55f86f8295a04d`
+
+`keymap.c` を変更した場合は、下記の手順でビルドし直してください（この `.bin` は自動では更新されません）。
+
 ## ビルド
 
 ```bash
