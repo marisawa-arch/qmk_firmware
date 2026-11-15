@@ -14,11 +14,15 @@ Make example for this keyboard (after setting up your build environment):
 
     make keychron/q10_max/ansi_encoder:keychron
     make keychron/q10_max/iso_encoder:keychron
+    make keychron/q10_max/jis_encoder:keychron
 
 Flashing example for this keyboard:
 
     make keychron/q10_max/ansi_encoder:keychron:flash
     make keychron/q10_max/iso_encoder:keychron:flash
+    make keychron/q10_max/jis_encoder:keychron:flash
+
+`jis_encoder` (JIS, 93 keys) was reconstructed from Keychron's official Q10 Max JIS knob firmware v1.0.0 (matrix, default keymap and LED driver map match it), and adds the Per-Key RGB / Mixed RGB support of this branch.
 
 **Reset Key**: Disconnect the USB cable, toggle mode switch to "Cable", hold down the *Esc* key or reset button underneath space bar, then connect the USB cable.
 
