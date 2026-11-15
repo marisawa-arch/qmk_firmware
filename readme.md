@@ -1,3 +1,21 @@
+> [!NOTE]
+> ## このブランチ（`q10_max_jis`）について
+>
+> Keychron 公式の `2025q3` ブランチに、**Keychron Q10 Max JIS（ノブ付き）** の定義を追加したブランチです。
+> 公式ソースには Q10 Max の JIS 定義がないため、公式 JIS ファームウェア v1.0.0 と JSON からマトリクス・初期キーマップ・LED 配線を再構成しました（ビルド結果は公式の値と一致）。
+> `2025q3` ベースなので、Keychron Launcher の **Per-Key RGB / Mixed RGB** が使えます。
+>
+> | キーマップ | 内容 | ビルド済みファームウェア |
+> |---|---|---|
+> | `keychron` | 公式と同じ初期配列 | [`keychron_q10_max_jis_encoder_keychron.bin`](keyboards/keychron/q10_max/firmware/keychron_q10_max_jis_encoder_keychron.bin) |
+> | [`jis_user`](keyboards/keychron/q10_max/jis_encoder/keymaps/jis_user/readme.md) | Launcher で設定していた自分用の配列を組み込み | [`keychron_q10_max_jis_encoder_jis_user.bin`](keyboards/keychron/q10_max/firmware/keychron_q10_max_jis_encoder_jis_user.bin) |
+>
+> - 定義: [`keyboards/keychron/q10_max/jis_encoder/`](keyboards/keychron/q10_max/jis_encoder/)
+> - ビルド: `make keychron/q10_max/jis_encoder:keychron` / `make keychron/q10_max/jis_encoder:jis_user`
+> - 書き込み: 背面スイッチを **Cable** にし、**Esc** を押しながら USB を接続して DFU モードにしてから、QMK Toolbox で `.bin` を書き込みます。
+>
+> 以下は元の Keychron QMK Firmware の README です。
+
 # Keychron QMK Firmware
 
 [![Star this repo](https://img.shields.io/github/stars/Keychron/qmk_firmware?style=social&label=Star%20this%20repo)](https://github.com/Keychron/qmk_firmware)
