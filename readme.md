@@ -1,3 +1,27 @@
+> [!NOTE]
+> ## このブランチ（`q10_max_caps_lt`）について
+>
+> Keychron Q10 Max（ANSI Encoder）用のカスタムキーマップ **`caps_lt`** を追加したブランチです。
+> Keychron 公式の `2025q3` ブランチをベースにしているため、Per-Key RGB も使えます。
+>
+> **Caps Lock キー**（Mac レイヤー: `LT(1, KC_CAPS)`、Windows レイヤー: `LT(3, KC_CAPS)`）
+>
+> | 操作 | 動作 |
+> |---|---|
+> | タップ | `Shift + Caps Lock`（IME の英字 / 日本語入力モード切り替え） |
+> | Shift を押しながらタップ | `Caps Lock`（大文字固定） |
+> | ホールド | Fn レイヤー（Mac: `MAC_FN`、Windows: `WIN_FN`） |
+>
+> - 詳しい説明: [`keyboards/keychron/q10_max/ansi_encoder/keymaps/caps_lt/readme.md`](keyboards/keychron/q10_max/ansi_encoder/keymaps/caps_lt/readme.md)
+> - キーマップ本体: [`keymap.c`](keyboards/keychron/q10_max/ansi_encoder/keymaps/caps_lt/keymap.c)
+> - ビルド済みファームウェア: [`keychron_q10_max_ansi_encoder_caps_lt.bin`](keyboards/keychron/q10_max/firmware/keychron_q10_max_ansi_encoder_caps_lt.bin)
+>
+> ビルド: `make keychron/q10_max/ansi_encoder:caps_lt`
+>
+> 書き込み: 背面スイッチを **Cable** にし、**Esc** を押しながら USB を接続して DFU モードにしてから、QMK Toolbox で `.bin` を書き込みます。
+>
+> 以下は元の Keychron QMK Firmware の README です。
+
 # Keychron QMK Firmware
 
 [![Star this repo](https://img.shields.io/github/stars/Keychron/qmk_firmware?style=social&label=Star%20this%20repo)](https://github.com/Keychron/qmk_firmware)
